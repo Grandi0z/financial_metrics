@@ -1,70 +1,227 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+<img src="./src/assets/icon/Grandiose.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
-## Available Scripts
+  <h3><b>Companies metrics</b></h3>
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# 📗 Table of Contents
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Companies metrics ](#-companies-metrics-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo Demo](#-live-demo-demo)
+  - [🚀 Video Demo Video](#-video-demo-video)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+        - [Note :](#note-)
+    - [Deployment](#deployment)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [❓ FAQ (OPTIONAL) ](#-faq-optional-)
+  - [📝 License ](#-license-)
 
-### `npm test`
+<!-- PROJECT DESCRIPTION -->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# 📖 Companies metrics <a name="about-project"></a>
 
-### `npm run build`
+This application takes companies as input and gives you financial data about them. You receive results such as market capitalization, growth rate, dividend yield, and more. This application is easy to use, fast, and reliable. It is a great tool for investors, analysts, students, and anyone who is interested in the financial world.  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Companies metrics** 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠 Built With <a name="built-with"></a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Tech Stack <a name="tech-stack"></a>
 
-### `npm run eject`
+The following stacks were used
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<details>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Javascript</a></li>
+    <li><a href="https://react-redux.js.org/">React Redux</a></li>
+    <li><a href="https://react.dev/t">React</a></li>
+    <li><a href="https://webpack.js.org/">Webpack</a></li>
+  </ul>
+</details>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<!-- Features -->
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Key Features <a name="key-features"></a>
 
-## Learn More
+- **Browse the companies list**
+- **Shows updated financial data of a selected company**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## 🚀 Live Demo <a name="live-demo" href="https://companies-metrics-xscn.onrender.com/">Demo</a>
+## 🚀 Video Demo <a name="live-demo" href="">Video</a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+### Prerequisites
+
+In order to run this project you need to have a browser and of course a code editor
+
+
+
+### Setup
+
+Clone this repository to your desired folder, you can also set up HTML, CSS and JavaScript linters, for this you will need node installed. you can follow the steps [here](https://github.com/microverseinc/linters-config/tree/master/html-css) and [here](https://github.com/microverseinc/linters-config/tree/master/javascript) to setup the linters
+
+
+### Install
+
+Once you cloned this project you are done !
+
+
+### Usage
+
+To run the project follow these steps :
+1. Install `Node.js` and `npm` on your computer (If you don't have them yet).
+2. Open your terminal and navigate to the root directory of your project.
+3. Run the command ```$npm start ``` in your terminal.
+4. Your default browser should open automatically and display your React app
+5. Because it's a mobile application,
+you will need to <a href="https://www.geeksforgeeks.org/browser-developer-tools/" target="_blank"> access your browser's developer </a> mode and reduce the screen size to that of a mobile phone.
+6. This project uses data provided by: financial modelling prep, as this project uses a free version of their API, which contains several restrictions, including:
+- Limiting requests to 250 per day
+- Use of data on US companies only.
+- No-authorization to retrieve companies by region.
+Therefore, You will find a sample of 42 US companies we used for our projects.
+But to limit the number of requests sent to the API, a function was finally created to retrieve 10 companies at random from the 42 but you can change this configuration in the `FilterCompanyProfiles.js` component on line 23.
+
+##### Note : 
+We provide profile keys here so that you can use them if you reach the number of requests allowed. Inside the `util` folder change the value of `key` variable in the `fetchAPI.js` file :
+- ```$
+  62a567c594d3ebe4b6ed6956ab3fb0de
+  ```
+- ```$
+  47145a2a30df9038b45fe0f3f2b783bd
+  ```
+- ```$
+  5332f3c13f9457e917e1098f3c882b81
+  ```
+- ```$
+  80bc438fc35b49b690e55443727ede71
+  ```
+- ```$
+  a7bdf39e8d91e9da68c667e23ecc6127
+  ```
+
+### Run tests
+
+If you follow the tutorial above to setup linters then you can run these tests
+
+```$
+  npx hint .
+```
+```$
+  npx stylelint "**/*.scss"
+```
+
+or if you use css then run this instead of the latter command above
+
+```$
+  npx stylelint "**/*.{css,scss}"
+```
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+You can deploy this project using: GitHub Pages Netifly or Render 
 
-### `npm run build` fails to minify
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Joseph L Kausi**
+
+- GitHub: [@Grandi0z](https://github.com/Grandi0z)
+- Twitter: [@Joseph_LSK](https://twitter.com/Joseph_LSK)
+- LinkedIn: [Joseph L Kausi](https://www.linkedin.com/in/joskal/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+
+- [ ] **Filter data by various criteria, such as market capitalization, growth rate, dividend yield, and more**
+- [ ] **Add a login page for user**
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Grandi0z/financial_metrics/issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project you can follow me on github for more.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+thanks to Microverse for providing the necessary resources.
+And special thanks to <a href='https://www.behance.net/sakwadesignstudio' target="_blank">Nelson Sakwa</a> the author of the original design
+
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+
+- **Are the linters necessary?**
+
+  - It is a good practice to install and use them as they guide you towards best practice, but yes you can do without. 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](https://github.com/Grandi0z/financial_metrics/blob/dev/LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

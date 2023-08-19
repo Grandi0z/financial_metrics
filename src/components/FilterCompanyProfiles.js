@@ -20,7 +20,7 @@ const FilterCompanyProfiles = () => {
   }
   useEffect(() => {
     if (run) {
-      const symbols = randomArray(companiesSymbols, companiesSymbols.length - 1);
+      const symbols = randomArray(companiesSymbols, companiesSymbols.length - 33);
       symbols.map((symbol) => dispatch(fetchCompaniesProfiles(symbol)));
     }
     return () => {
