@@ -75,7 +75,7 @@ The following stacks were used
 <a name="live-demo" href="https://companies-metrics-xscn.onrender.com/">Demo</a>
 
 ## 🚀 Video Demo 
-<a name="live-demo" href="https://www.loom.com/share/df7c39a66b0a46f2b7db8194fb38ab52">Video</a>
+<a name="live-demo" href="https://www.loom.com/share/df7c39a66b0a46f2b7db8194fb38ab52?sid=34a85a37-0dec-4e9d-a7b8-6e6aa106d488">Video</a>
 
 
 
