@@ -1,8 +1,8 @@
 const companyDetails = [
   {
-    calendarYear: "2000",
-    cik: "2",
-    costAndExpenses: "Mission 1 description",
+    calendarYear: '2000',
+    cik: '2',
+    costAndExpenses: 'Mission 1 description',
     costOfRevenue: 223546000000,
     depreciationAndAmortization: 11104000000,
     ebitda: 130541000000,
@@ -23,21 +23,21 @@ const companyDetails = [
     operatingIncome: 119437000000,
     operatingIncomeRatio: 0.302887444,
     otherExpenses: -334000000,
-    period: "FY",
-    reportedCurrency: "USD",
+    period: 'FY',
+    reportedCurrency: 'USD',
     researchAndDevelopmentExpenses: 26251000000,
     revenue: 394328000000,
     sellingAndMarketingExpenses: 0,
     sellingGeneralAndAdministrativeExpenses: 25094000000,
-    symbol: "AAPL",
+    symbol: 'AAPL',
     totalOtherIncomeExpensesNet: -334000000,
     weightedAverageShsOut: 16215963000,
     weightedAverageShsOutDil: 16325819000,
   },
   {
-    calendarYear: "2000",
-    cik: "2",
-    costAndExpenses: "Mission 1 description",
+    calendarYear: '2000',
+    cik: '2',
+    costAndExpenses: 'Mission 1 description',
     costOfRevenue: 223546000000,
     depreciationAndAmortization: 11104000000,
     ebitda: 130541000000,
@@ -58,13 +58,13 @@ const companyDetails = [
     operatingIncome: 119437000000,
     operatingIncomeRatio: 0.302887444,
     otherExpenses: -334000000,
-    period: "FY",
-    reportedCurrency: "USD",
+    period: 'FY',
+    reportedCurrency: 'USD',
     researchAndDevelopmentExpenses: 26251000000,
     revenue: 394328000000,
     sellingAndMarketingExpenses: 0,
     sellingGeneralAndAdministrativeExpenses: 25094000000,
-    symbol: "AAPL",
+    symbol: 'AAPL',
     totalOtherIncomeExpensesNet: -334000000,
     weightedAverageShsOut: 16215963000,
     weightedAverageShsOutDil: 16325819000,
@@ -74,28 +74,28 @@ const companyDetails = [
 const companiesProfiles = {
   rockets: [
     {
-      companyName: "Company 1",
-      fullTimeEmployees: "4",
-      image: "company.jpg",
-      industry: "industry",
+      companyName: 'Company 1',
+      fullTimeEmployees: '4',
+      image: 'company.jpg',
+      industry: 'industry',
     },
     {
-      companyName: "Company 2",
-      fullTimeEmployees: "5",
-      image: "company2.jpg",
-      industry: "industry",
+      companyName: 'Company 2',
+      fullTimeEmployees: '5',
+      image: 'company2.jpg',
+      industry: 'industry',
     },
   ],
 };
 
 const get = (url) => {
-  if (url === "https://financialmodelingprep.com/api/v3/profile/") {
+  if (url === 'https://financialmodelingprep.com/api/v3/profile/') {
     return Promise.resolve({
       data: companiesProfiles,
     });
   }
 
-  if (url === "https://financialmodelingprep.com/api/v3/income-statement/") {
+  if (url === 'https://financialmodelingprep.com/api/v3/income-statement/') {
     return Promise.resolve({
       data: companyDetails,
     });
