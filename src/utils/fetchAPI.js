@@ -1,7 +1,7 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const key = 'a7bdf39e8d91e9da68c667e23ecc6127';
+const key = '62a567c594d3ebe4b6ed6956ab3fb0de';
 const link = 'https://financialmodelingprep.com/api/v3';
 
 const fetchCompaniesSymbols = createAsyncThunk('companiesSymbols/fetchCompaniesSymbols',
