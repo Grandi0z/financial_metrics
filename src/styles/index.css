@@ -2,10 +2,16 @@
 
 * {
   font-family: 'Montserrat', sans-serif;
+  color: #fff;
 }
 
 a {
   text-decoration: none;
+}
+
+#root {
+  background-color: black;
+  min-height: 100vh;
 }
 
 .details {
@@ -39,6 +45,11 @@ a {
       rgba(19, 20, 19, 0.8353466386554622) 71%
     );
   padding: 0 0.5rem;
+  color: rebeccapurple;
+}
+
+.bar * {
+  color: #8edadd;
 }
 
 .navLinks {
@@ -65,4 +76,14 @@ a {
 
 .bigTitle {
   font-family: "Agdasima", fantasy;
+}
+
+.errorMessage {
+  color: red;
+  font-style: italic;
+}
+
+.loadingData {
+  color: rebeccapurple;
+  font-style: italic;
 }
