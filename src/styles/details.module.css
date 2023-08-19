@@ -1,0 +1,69 @@
+.ulDetails {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  height: 75vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* just make scrollbar invisible */
+}
+
+/* show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #f00;
+}
+
+.liDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+  list-style: none;
+  height: 13vh;
+  font-size: smaller;
+}
+
+.liDetails:hover {
+  opacity: 0.8;
+}
+
+.propertyValue {
+  margin-left: auto;
+}
+
+.cardLink {
+  padding-left: 0.3rem;
+}
+
+.titleDetails {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0.3rem 0.9rem auto;
+  text-align: right;
+  width: 50%;
+  font-size: large;
+  font-weight: 900;
+}
+
+.subTitleDetails {
+  margin: 0 0 0 0.8rem;
+  text-align: left;
+  font-size: small;
+  font-weight: 200;
+  background:
+    linear-gradient(
+      187deg,
+      rgba(6, 14, 7, 0.8465511204481793) 22%,
+      rgba(28, 65, 46, 0.8521533613445378) 45%,
+      rgba(19, 20, 19, 0.8353466386554622) 71%
+    );
+}
+
+.employees {
+  font-size: x-small;
+  font-weight: 400;
+}
