@@ -24,7 +24,6 @@
     - [Install](#install)
     - [Usage](#usage)
         - [Note :](#note-)
-    - [Run tests](#run-tests)
     - [Deployment](#deployment)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
@@ -118,11 +117,21 @@ But to limit the number of requests sent to the API, a function was finally crea
 
 ##### Note : 
 We provide profile keys here so that you can use them if you reach the number of requests allowed. Inside the `util` folder change the value of `key` variable in the `fetchAPI.js` file :
-- `62a567c594d3ebe4b6ed6956ab3fb0de`
-- `47145a2a30df9038b45fe0f3f2b783bd`
-- `5332f3c13f9457e917e1098f3c882b81`
-- `80bc438fc35b49b690e55443727ede71`
-- `a7bdf39e8d91e9da68c667e23ecc6127`
+- ```$
+  62a567c594d3ebe4b6ed6956ab3fb0de
+  ```
+- ```$
+  47145a2a30df9038b45fe0f3f2b783bd
+  ```
+- ```$
+  5332f3c13f9457e917e1098f3c882b81
+  ```
+- ```$
+  80bc438fc35b49b690e55443727ede71
+  ```
+- ```$
+  a7bdf39e8d91e9da68c667e23ecc6127
+  ```
 
 ### Run tests
 
