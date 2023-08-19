@@ -16,8 +16,8 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [🚀 Live Demo Demo](#-live-demo-demo)
-  - [🚀 Video Demo Video](#-video-demo-video)
+  - [🚀 Live Demo](#-live-demo)
+  - [🚀 Video Demo](#-video-demo)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -71,8 +71,11 @@ The following stacks were used
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 🚀 Live Demo <a name="live-demo" href="https://companies-metrics-xscn.onrender.com/">Demo</a>
-## 🚀 Video Demo <a name="live-demo" href="">Video</a>
+## 🚀 Live Demo 
+<a name="live-demo" href="https://companies-metrics-xscn.onrender.com/">Demo</a>
+
+## 🚀 Video Demo 
+<a name="live-demo" href="https://www.loom.com/share/df7c39a66b0a46f2b7db8194fb38ab52">Video</a>
 
 
 
