@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import { v4 as uuidv4 } from 'uuid';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
-import { propTypes } from 'react-bootstrap/esm/Image';
 import styles from '../styles/details.module.css';
 import {
   splitTitle,
@@ -102,7 +101,7 @@ const DetailsCompany = (props) => {
 
 DetailsCompany.propTypes = {
   company: PropTypes.shape(PropTypes.string).isRequired,
-  profile: PropTypes.shape(propTypes.string).isRequired,
+  profile: PropTypes.shape(PropTypes.string).isRequired,
 };
 
 export default DetailsCompany;
