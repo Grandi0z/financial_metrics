@@ -33,7 +33,7 @@ const FilterCompanyProfiles = () => {
     content = <div className="loadingData">Is loading...</div>;
   } else if (error) {
     content = <div className="errorMessage">Something went wrong</div>;
-    //the condition should be !fetchingProfile && companies.length >= companiesSymbols.length
+    // the condition should be !fetchingProfile && companies.length >= companiesSymbols.length
   } else if (!fetchingProfile && companies.length && companiesSymbols.length) {
     content = <CompaniesList companies={companies} />;
   } else {
