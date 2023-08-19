@@ -63,5 +63,5 @@ const randomArray = (arr, number) => {
 };
 
 export {
-  splitTitle, splitDate, filterMetricsValues, capitalizeAndSpace, setBackGround, randomArray,
+  splitTitle, splitDate, filterMetricsValues, capitalizeAndSpace, setBackGround, randomArray, getCurrencyFormat
 };
