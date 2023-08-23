@@ -12,8 +12,8 @@ const Company = (props) => {
     company
 
     && (
-    <Card style={setBackGround(myStyle, company.image)} className={styles.card}>
-      <Card.Body className={styles.cardBody}>
+    <Card className={styles.card}>
+      <Card.Body style={setBackGround(myStyle, company.image)} className={styles.cardBody}>
         <Card.Link href="#" className={styles.cardLink}><i className="bi bi-arrow-right-circle" /></Card.Link>
         <Card.Title className={styles.cardTitle}>{company.companyName}</Card.Title>
         <Card.Subtitle className={styles.cardSubTitle}>

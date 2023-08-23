@@ -20,9 +20,8 @@
 .card {
   width: 45vw;
   height: 33.3vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top;
+  border: none;
+  background-color: #181a1b;
 }
 
 .cardBody {
@@ -32,6 +31,9 @@
   justify-content: flex-end;
   padding: 0.9rem 0.3rem;
   text-align: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .cardTitle {
@@ -41,6 +43,7 @@
 
 .cardSubTitle {
   font-size: 0.4rem;
+  color: aliceblue;
 }
 
 .cardLink {
@@ -55,4 +58,18 @@
 /* show position indicator in red */
 ::-webkit-scrollbar-thumb {
   background: #f00;
+}
+
+@media screen and (min-width: 600px) {
+  .ulCompanies {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: auto;
+    gap: 0.5rem;
+  }
+
+  .card {
+    height: 19.3vh;
+    width: 100%;
+  }
 }
