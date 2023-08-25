@@ -7,15 +7,19 @@ import CompaniesList from './CompaniesList';
 import { randomArray } from '../utils/filtersFunctions';
 
 const FilterCompanyProfiles = () => {
+  // set the number of companies which will be display which is 43 - count
+  const count = 37;
+
   const {
     isLoading, error, fetchingProfile,
   } = useSelector((store) => store.companies);
+
   const companiesSymbols = useSelector(arrCompaniesSymbols);
   const dispatch = useDispatch();
   const companies = useSelector(arrCompaniesProfiles);
   // control the useEffect
   let run = true;
-  if (companies.length >= companiesSymbols.length) {
+  if (companies.length >= (companiesSymbols.length - count)) {
     run = false;
   }
   // sometimes the Api sends empty company, so to avoid to use them, let's do a filter
@@ -27,9 +31,10 @@ const FilterCompanyProfiles = () => {
       }
     });
   }
+
   useEffect(() => {
     if (run) {
-      const symbols = randomArray(companiesSymbols, companiesSymbols.length - 40);
+      const symbols = randomArray(companiesSymbols, companiesSymbols.length - count);
       symbols.map((symbol) => dispatch(fetchCompaniesProfiles(symbol)));
     }
     return () => {
@@ -43,7 +48,9 @@ const FilterCompanyProfiles = () => {
   } else if (error) {
     content = <div className="errorMessage">Something went wrong</div>;
     // the condition should be !fetchingProfile && trueCompanies.length >= companiesSymbols.length
-  } else if (!fetchingProfile && trueCompanies.length && companiesSymbols.length) {
+  } else if (!fetchingProfile
+      && (trueCompanies.length >= companiesSymbols.length - count)
+      && companiesSymbols.length) {
     content = <CompaniesList companies={trueCompanies} />;
   } else {
     content = <div>Data are fetching...</div>;
