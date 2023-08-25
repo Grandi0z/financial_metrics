@@ -5,6 +5,8 @@
   height: 75vh;
   overflow: hidden;
   overflow-y: scroll;
+  padding-top: 0.5rem;
+  row-gap: 0.5rem;
 }
 
 ::-webkit-scrollbar {
@@ -29,6 +31,10 @@
 
 .liDetails:hover {
   opacity: 0.8;
+}
+
+.card {
+  border: none;
 }
 
 .propertyValue {
@@ -66,4 +72,16 @@
 .employees {
   font-size: x-small;
   font-weight: 400;
+}
+
+@media screen and (min-width: 600px) {
+  .ulDetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .liDetails > span:first-child {
+    width: 50%;
+  }
 }

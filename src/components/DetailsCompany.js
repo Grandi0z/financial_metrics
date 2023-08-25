@@ -75,7 +75,7 @@ const DetailsCompany = (props) => {
             {properties.map((property) => {
               backgroundCheck = !backgroundCheck;
               return (
-                <Card key={uuidv4()} className="card">
+                <Card key={uuidv4()} className={styles.card}>
                   <Card.Body
                     style={backgroundCheck ? myBackground1 : myBackground2}
                     className={styles.liDetails}

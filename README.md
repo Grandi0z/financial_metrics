@@ -115,8 +115,8 @@ you will need to <a href="https://www.geeksforgeeks.org/browser-developer-tools/
 - Limiting requests to 250 per day
 - Use of data on US companies only.
 - No-authorization to retrieve companies by region.
-Therefore, You will find a sample of 42 US companies we used for our projects.
-But to limit the number of requests sent to the API, a function was finally created to retrieve 10 companies at random from the 42 but you can change this configuration in the `FilterCompanyProfiles.js` component on line 23.
+Therefore, You will find a sample of 43 US companies we used for our projects.
+But to limit the number of requests sent to the API, a function was finally created to retrieve 10 companies randomly from the 42 but you can change this configuration in the `FilterCompanyProfiles.js` component on line 11 by changing the value of the variable `count`.
 
 ##### Note : 
 We provide profile keys here so that you can use them if you reach the number of requests allowed. Inside the `util` folder change the value of `key` variable in the `fetchAPI.js` file :

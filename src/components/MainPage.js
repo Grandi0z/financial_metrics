@@ -16,6 +16,18 @@ const MainPage = () => (
           <Link href="/#"><i className="bi bi-gear-wide" /></Link>
         </div>
       </div>
+      <div className="bar-desk">
+        <div>
+          <Link to="/" style={{ textDecoration: 'none' }}>Companies</Link>
+        </div>
+        <span>most Companies</span>
+        <div className="navLinks">
+          <Link href="/#" style={{ textDecoration: 'none' }}>
+            <i className="bi bi-gear-wide" />
+            Settings
+          </Link>
+        </div>
+      </div>
       <h1 className="country">42 USA&apos;S COMPANIES</h1>
     </div>
     <FilterCompanyProfiles />

@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import { NavLink, Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import PropTypes from 'prop-types';
 import Company from './Company';
 import styles from '../styles/company.module.css';
+import SearchBar from './SearchBar';
 
 const CompaniesList = (props) => {
   const { companies } = props;
 
-  const listItems = companies.map((company) => (
+  const [filterCompanies, setFilterCompanies] = useState([...companies]);
+
+  const listItems = filterCompanies.map((company) => (
     <li key={uuidv4()} className={styles.liCompany}>
       <NavLink
         to="/details"
@@ -23,6 +26,7 @@ const CompaniesList = (props) => {
   return (
     <Container style={{ padding: 0 }}>
       <h2 className="bigTitle">COMPANIES BY NAME</h2>
+      <SearchBar companies={companies} setFilterCompanies={setFilterCompanies} />
       <Link className="source" to="https://financialmodelingprep.com/developer/docs/">
         Data provided by Financial Modeling Prep
       </Link>
