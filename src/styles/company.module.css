@@ -1,0 +1,75 @@
+
+.ulCompanies {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.3rem;
+  padding: 0;
+  height: 75vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.liCompany {
+  list-style: none;
+}
+
+.liCompany:hover {
+  opacity: 0.8;
+}
+
+.card {
+  width: 45vw;
+  height: 33.3vh;
+  border: none;
+  background-color: #181a1b;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0.9rem 0.3rem;
+  text-align: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.cardTitle {
+  font-size: 0.7rem;
+  color: white;
+}
+
+.cardSubTitle {
+  font-size: 0.4rem;
+  color: aliceblue;
+}
+
+.cardLink {
+  margin: 0 0 auto auto;
+}
+
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* just make scrollbar invisible */
+}
+
+/* show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #f00;
+}
+
+@media screen and (min-width: 600px) {
+  .ulCompanies {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: auto;
+    gap: 0.5rem;
+  }
+
+  .card {
+    height: 19.3vh;
+    width: 100%;
+  }
+}

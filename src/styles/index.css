@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Montserrat:wght@300;400;500;600&family=Roboto+Mono&family=Roboto+Slab:wght@300;500&family=Ubuntu+Mono:wght@400;700&family=Ubuntu:wght@300;500;700&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+#root {
+  min-height: 100vh;
+  background: #0c3131;
+}
+
+.details {
+  padding-top: 1rem;
+}
+
+.companyTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 27vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+
+.region {
+  background-image: url('../assets/images/dollar.jpg');
+  background-size: cover;
+  height: 27vh;
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  background:
+    linear-gradient(
+      187deg,
+      rgba(6, 14, 7, 0.8465511204481793) 22%,
+      rgba(28, 65, 46, 0.8521533613445378) 45%,
+      rgba(19, 20, 19, 0.8353466386554622) 71%
+    );
+  padding: 0 0.5rem;
+  color: rebeccapurple;
+}
+
+.bar * {
+  color: #8edadd;
+}
+
+.bar-desk {
+  display: none;
+}
+
+.navLinks {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.source {
+  text-decoration: none;
+  color: green;
+  font-size: xx-small;
+  padding: 0;
+  margin: 0 auto;
+  position: absolute;
+  top: 34.1%;
+}
+
+.country {
+  margin: 3rem 0;
+  text-align: center;
+  font-weight: lighter;
+  color: #fff;
+}
+
+.bigTitle {
+  font-family: "Agdasima", fantasy;
+}
+
+.errorMessage {
+  color: red;
+  font-style: italic;
+}
+
+.loadingData {
+  color: rebeccapurple;
+  font-style: italic;
+}
+
+@media screen and (min-width: 600px) {
+  a {
+    text-decoration: none;
+  }
+
+  .container {
+    min-width: 100%;
+  }
+
+  .bigTitle {
+    text-align: center;
+  }
+
+  .source {
+    top: 34.9%;
+  }
+
+  .bar {
+    display: none;
+  }
+
+  .bar-desk {
+    display: flex;
+    justify-content: space-between;
+    background:
+      linear-gradient(
+        187deg,
+        rgba(6, 14, 7, 0.8465511204481793) 22%,
+        rgba(28, 65, 46, 0.8521533613445378) 45%,
+        rgba(19, 20, 19, 0.8353466386554622) 71%
+      );
+    padding: 0 0.5rem;
+    color: rebeccapurple;
+  }
+
+  .region {
+    background-size: contain;
+    background-position: top;
+  }
+}
