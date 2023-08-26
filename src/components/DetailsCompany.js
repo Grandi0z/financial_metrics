@@ -55,6 +55,20 @@ const DetailsCompany = (props) => {
               </Link>
             </div>
           </div>
+          <div className="bar-desk">
+            <div>
+              <Link to="/" style={{ textDecoration: 'none' }}>
+                Companies
+              </Link>
+            </div>
+            <span>most Companies</span>
+            <div className="navLinks">
+              <Link href="/#" style={{ textDecoration: 'none' }}>
+                <i className="bi bi-gear-wide" />
+                Settings
+              </Link>
+            </div>
+          </div>
           <header className="companyTitle" style={titleGroung}>
             <h2 className={styles.titleDetails}>
               {companyName}

@@ -8,9 +8,11 @@ import styles from '../styles/company.module.css';
 import SearchBar from './SearchBar';
 
 const CompaniesList = (props) => {
-  const { companies } = props;
+  const { companiesEnt } = props;
+  // doing this just as a filter to avoid duplicated value.
+  const companies = new Set(companiesEnt);
 
-  const [filterCompanies, setFilterCompanies] = useState([...companies]);
+  const [filterCompanies, setFilterCompanies] = useState(Array.from(companies));
 
   const listItems = filterCompanies.map((company) => (
     <li key={uuidv4()} className={styles.liCompany}>
@@ -38,7 +40,7 @@ const CompaniesList = (props) => {
 };
 
 CompaniesList.propTypes = {
-  companies: PropTypes.shape().isRequired,
+  companiesEnt: PropTypes.shape().isRequired,
 };
 
 export default CompaniesList;
