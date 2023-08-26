@@ -28,7 +28,7 @@ const CompaniesList = (props) => {
   return (
     <Container style={{ padding: 0 }}>
       <h2 className="bigTitle">COMPANIES BY NAME</h2>
-      <SearchBar companies={companies} setFilterCompanies={setFilterCompanies} />
+      <SearchBar companies={filterCompanies} setFilterCompanies={setFilterCompanies} />
       <Link className="source" to="https://financialmodelingprep.com/developer/docs/">
         Data provided by Financial Modeling Prep
       </Link>
@@ -40,7 +40,7 @@ const CompaniesList = (props) => {
 };
 
 CompaniesList.propTypes = {
-  companiesEnt: PropTypes.shape().isRequired,
+  companiesEnt: PropTypes.arrayOf(PropTypes.shape()).isRequired,
 };
 
 export default CompaniesList;

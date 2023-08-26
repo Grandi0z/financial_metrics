@@ -28,7 +28,7 @@ const SearchBar = (props) => {
 };
 
 SearchBar.propTypes = {
-  companies: PropTypes.shape().isRequired,
+  companies: PropTypes.arrayOf(PropTypes.shape()).isRequired,
   setFilterCompanies: PropTypes.func.isRequired,
 };
 
