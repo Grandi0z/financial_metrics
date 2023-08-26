@@ -14,6 +14,12 @@ const SearchBar = (props) => {
     ));
     setFilterCompanies(result);
   };
+  // when the search bar lost the focus
+  const handleFocus = (e) => {
+    if (e.target.value === '') {
+      setFilterCompanies(companies);
+    }
+  };
   return (
     <InputGroup size="sm" className="mb-3">
       <InputGroup.Text id="inputGroup-sizing-sm"><i className="bi bi-search" /></InputGroup.Text>
@@ -22,6 +28,7 @@ const SearchBar = (props) => {
         aria-describedby="inputGroup-sizing-sm"
         value={value}
         onChange={(e) => handleChange(e.target.value)}
+        onBlur={(e) => handleFocus(e)}
       />
     </InputGroup>
   );

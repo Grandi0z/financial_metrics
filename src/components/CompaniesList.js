@@ -9,9 +9,10 @@ import SearchBar from './SearchBar';
 
 const CompaniesList = (props) => {
   const { companiesEnt } = props;
+
   // doing this just as a filter to avoid duplicated value.
   const companies = new Set(companiesEnt);
-
+  const trueCompanies = Array.from(companies);
   const [filterCompanies, setFilterCompanies] = useState(Array.from(companies));
 
   const listItems = filterCompanies.map((company) => (
@@ -28,7 +29,10 @@ const CompaniesList = (props) => {
   return (
     <Container style={{ padding: 0 }}>
       <h2 className="bigTitle">COMPANIES BY NAME</h2>
-      <SearchBar companies={filterCompanies} setFilterCompanies={setFilterCompanies} />
+      <SearchBar
+        companies={trueCompanies}
+        setFilterCompanies={setFilterCompanies}
+      />
       <Link className="source" to="https://financialmodelingprep.com/developer/docs/">
         Data provided by Financial Modeling Prep
       </Link>
