@@ -22,7 +22,7 @@ const SearchBar = (props) => {
   };
   return (
     <InputGroup size="sm" className="mb-3">
-      <InputGroup.Text id="inputGroup-sizing-sm"><i className="bi bi-search" /></InputGroup.Text>
+      <InputGroup.Text id="inputGroup-sizing-sm"><i className="bi bi-search" style={{ color: 'black' }} /></InputGroup.Text>
       <Form.Control
         aria-label="Small"
         aria-describedby="inputGroup-sizing-sm"
