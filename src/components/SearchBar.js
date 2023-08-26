@@ -14,21 +14,28 @@ const SearchBar = (props) => {
     ));
     setFilterCompanies(result);
   };
+  // when the search bar lost the focus
+  const handleFocus = (e) => {
+    if (e.target.value === '') {
+      setFilterCompanies(companies);
+    }
+  };
   return (
     <InputGroup size="sm" className="mb-3">
-      <InputGroup.Text id="inputGroup-sizing-sm"><i className="bi bi-search" /></InputGroup.Text>
+      <InputGroup.Text id="inputGroup-sizing-sm"><i className="bi bi-search" style={{ color: 'black' }} /></InputGroup.Text>
       <Form.Control
         aria-label="Small"
         aria-describedby="inputGroup-sizing-sm"
         value={value}
         onChange={(e) => handleChange(e.target.value)}
+        onBlur={(e) => handleFocus(e)}
       />
     </InputGroup>
   );
 };
 
 SearchBar.propTypes = {
-  companies: PropTypes.shape().isRequired,
+  companies: PropTypes.arrayOf(PropTypes.shape()).isRequired,
   setFilterCompanies: PropTypes.func.isRequired,
 };
 

@@ -51,7 +51,7 @@ const FilterCompanyProfiles = () => {
   } else if (!fetchingProfile
       && (trueCompanies.length >= companiesSymbols.length - count)
       && companiesSymbols.length) {
-    content = <CompaniesList companies={trueCompanies} />;
+    content = <CompaniesList companiesEnt={trueCompanies} />;
   } else {
     content = <div>Data are fetching...</div>;
   }

@@ -8,9 +8,12 @@ import styles from '../styles/company.module.css';
 import SearchBar from './SearchBar';
 
 const CompaniesList = (props) => {
-  const { companies } = props;
+  const { companiesEnt } = props;
 
-  const [filterCompanies, setFilterCompanies] = useState([...companies]);
+  // doing this just as a filter to avoid duplicated value.
+  const companies = new Set(companiesEnt);
+  const trueCompanies = Array.from(companies);
+  const [filterCompanies, setFilterCompanies] = useState(Array.from(companies));
 
   const listItems = filterCompanies.map((company) => (
     <li key={uuidv4()} className={styles.liCompany}>
@@ -26,7 +29,10 @@ const CompaniesList = (props) => {
   return (
     <Container style={{ padding: 0 }}>
       <h2 className="bigTitle">COMPANIES BY NAME</h2>
-      <SearchBar companies={companies} setFilterCompanies={setFilterCompanies} />
+      <SearchBar
+        companies={trueCompanies}
+        setFilterCompanies={setFilterCompanies}
+      />
       <Link className="source" to="https://financialmodelingprep.com/developer/docs/">
         Data provided by Financial Modeling Prep
       </Link>
@@ -38,7 +44,7 @@ const CompaniesList = (props) => {
 };
 
 CompaniesList.propTypes = {
-  companies: PropTypes.shape().isRequired,
+  companiesEnt: PropTypes.arrayOf(PropTypes.shape()).isRequired,
 };
 
 export default CompaniesList;
