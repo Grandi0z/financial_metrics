@@ -8,7 +8,7 @@ import { randomArray } from '../utils/filtersFunctions';
 
 const FilterCompanyProfiles = () => {
   // set the number of companies which will be display which is 43 - count
-  const count = 42;
+  const count = 37;
 
   const {
     isLoading, error, fetchingProfile,
